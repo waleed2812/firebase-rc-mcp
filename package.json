@@ -1,0 +1,41 @@
+{
+  "name": "firebase-rc-mcp",
+  "version": "0.2.0",
+  "description": "MCP server for managing Firebase Remote Config from Claude Code. Chat-driven CRUD with diff-gated publishes, including parameters nested inside parameter groups. Sign in with Google once; no service-account JSON, no GCP console setup.",
+  "author": "Vyro AI (https://vyro.ai)",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "firebase",
+    "remote-config",
+    "claude",
+    "claude-code"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waleed2812/firebase-rc-mcp.git"
+  },
+  "homepage": "https://github.com/waleed2812/firebase-rc-mcp#readme",
+  "bugs": "https://github.com/waleed2812/firebase-rc-mcp/issues",
+  "bin": {
+    "firebase-rc-mcp": "src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "google-auth-library": "^9.14.0",
+    "zod": "^3.23.8"
+  }
+}
