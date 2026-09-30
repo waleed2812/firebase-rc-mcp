@@ -47,7 +47,7 @@ function maybeNotSignedIn(e) {
 }
 const projectArg = z.string().describe('Firebase project ID (e.g. "my-app-prod"). Whatever project the user wants to operate on; their Google account must have Remote Config Admin (or higher) on it.');
 export async function startServer() {
-    const server = new McpServer({ name: 'firebase_rc', version: '0.2.0' }, { instructions: INSTRUCTIONS });
+    const server = new McpServer({ name: 'firebase_rc', version: '1.0.0' }, { instructions: INSTRUCTIONS });
     server.registerTool('rc_auth_status', {
         description: 'Check whether the user is signed in. Call this first if anything fails with "not signed in." If signedIn is false, call rc_login.',
         inputSchema: {},
